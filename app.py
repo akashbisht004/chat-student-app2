@@ -13,7 +13,7 @@ def main():
     if "processed_pdfs" not in st.session_state:
         st.session_state.processed_pdfs = False
     
-    st.header("Chat with Multiple PDFs 📚")
+    st.header("Chat with Multiple PDFs")
     
     with st.sidebar:
         st.subheader("Your Documents")

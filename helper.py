@@ -44,7 +44,7 @@ def get_conversation_chain(vectorstore):
         temperature=0.7,
         max_tokens=1024,
         top_p=0.85,
-        together_api_key="a99d3ae8ff84f4d463cdc6e9c1905e38e05830682efa173703322d3b840b8dae"
+        together_api_key=os.getenv("TOGETHER_API_KEY")
     )
     
     memory = ConversationBufferMemory(
